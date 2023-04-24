@@ -68,7 +68,7 @@ const Locations = () => {
   };
 
   return (
-    <div className="bg-[#FFFFFF] border-[1px] border-[#EFF1F6] h-[auto] md:h-[326px] w-[100%] md:w-[620px] lg:w-[820px] rounded-[12px] mr-2 py-2 md:py-0">
+    <div className="bg-[#FFFFFF] border-[1px] border-[#EFF1F6] h-[auto] md:h-[326px] w-[100%] rounded-[12px] mr-2 py-2 md:py-0">
       <div className="p-3 flex items-center flex-row justify-between">
         <h3 className="text-[18px] leading-[24px] font-bold">Top Locations</h3>
         <button className="text-[#FF5403] text-[14px] leading-[22px]">

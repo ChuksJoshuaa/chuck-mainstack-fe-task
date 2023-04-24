@@ -33,7 +33,7 @@ const Dashboard = () => {
 
       <div className="py-3 px-9 flex flex-col">
         <Chart />
-        <div className="flex flex-col md:flex-row w-full justify-center md:justify-between items-center">
+        <div className="flex flex-col lg:flex-row w-full justify-center md:justify-between items-center">
           <Locations />
           <Sources />
         </div>
