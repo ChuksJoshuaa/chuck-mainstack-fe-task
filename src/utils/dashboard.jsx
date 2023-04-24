@@ -1,6 +1,7 @@
 import { FcGoogle } from "react-icons/fc";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import moment from "moment";
 
 export const timeData = [
   "1 Day",
@@ -76,4 +77,11 @@ export const flagSourceIcon = (source) => {
     flag = <BsLinkedin />;
   }
   return flag;
+};
+
+export const dateFormatter = (date) => {
+  let value = new Date(date).toISOString();
+  value = moment(value).format("ll");
+  value = value.slice(0, 5);
+  return value;
 };
