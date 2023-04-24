@@ -14,7 +14,7 @@ const Dashboard = () => {
         Dashboard
       </h3>
 
-      <div className="py-3 px-9 flex justify-between items-center flex-wrap">
+      <div className="py-3 px-4 md:px-9 flex justify-between items-center flex-wrap">
         <div className="flex flex-col">
           <div className="flex pb-2 justify-start items-center flex-wrap text-[24px] text-[#131316] leading-[32px] text-nowrap">
             <h3 className="pr-1">Good morning,</h3>
@@ -31,9 +31,9 @@ const Dashboard = () => {
         </button>
       </div>
 
-      <div className="py-3 px-9 flex flex-col">
+      <div className="py-3 px-4 md:px-9 flex flex-col">
         <Chart />
-        <div className="flex flex-col md:flex-row w-full justify-center md:justify-between items-center">
+        <div className="flex flex-col lg:flex-row w-full justify-center md:justify-between items-center">
           <Locations />
           <Sources />
         </div>
