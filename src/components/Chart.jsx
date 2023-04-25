@@ -73,6 +73,9 @@ const Chart = () => {
     markers: {
       disabled: false,
     },
+    dataLabels: {
+      enabled: false,
+    },
     yaxis: [
       {
         title: {
