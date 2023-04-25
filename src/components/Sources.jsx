@@ -69,7 +69,7 @@ const Sources = () => {
   };
 
   return (
-    <div className="bg-[#FFFFFF] border-[1px] border-[#EFF1F6] h-[auto] md:h-[326px] w-[100%]  rounded-[12px] my-3 lg:my-3 py-2 md:py-0">
+    <div className="bg-[#FFFFFF] border-[1px] border-[#EFF1F6] h-[auto] md:h-[350px] w-[100%]  rounded-[12px] my-3 lg:my-3 py-2 md:py-0">
       <div className="p-3 flex items-center flex-row justify-between">
         <h3 className="text-[18px] leading-[24px] font-bold">
           Top Referral Source
@@ -80,16 +80,16 @@ const Sources = () => {
       </div>
 
       <div className="pt-5 flex flex-col-reverse md:flex-row justify-between items-center">
-        <div className="flex flex-col w-[255px] md:w-[300px]">
+        <div className="flex flex-col w-[auto]">
           {sources?.map((item, index) => (
             <div
-              className="px-4 py-2 flex flex-row item-center justify-center md:justify-start"
+              className="px-4 py-2 flex flex-row flex-nowrap text-nowrap item-center justify-center md:justify-start"
               key={index}
             >
               <span className="text-[15px] mt-1">
                 {flagSourceIcon(item.source)}
               </span>
-              <span className="px-2 text-[16px] leading-[140%] text-[#131316] capitalize">
+              <span className="px-1 text-[16px] md:text-[14px] lg:text-[16px] leading-[140%] text-[#131316] capitalize">
                 {item.source} <span className="font-bold">{item.percent}%</span>
               </span>
               <span
@@ -100,7 +100,7 @@ const Sources = () => {
             </div>
           ))}
           <div className="px-9 pt-2 flex items-center flex-row justify-center md:justify-start">
-            <span className="text-[16px] leading-[140%] text-[#131316] pr-3">
+            <span className="text-[16px] md:text-[14px] lg:text-[16px] leading-[140%] text-[#131316] pr-1">
               Others <span className="font-bold">24%</span>
             </span>
             <span
@@ -109,7 +109,7 @@ const Sources = () => {
           </div>
         </div>
         <div className="donut">
-          <Chart options={options} series={series} type="donut" width="290" />
+          <Chart options={options} series={series} type="donut" />
         </div>
       </div>
     </div>
