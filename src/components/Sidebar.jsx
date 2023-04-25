@@ -10,8 +10,8 @@ const Sidebar = () => {
 
   return (
     <div className={`${isSidebarOpen ? "pr-5" : ""}`}>
-      <div className={`${isSidebarOpen ? "px-[4em] py-3" : "p-2"}`}>
-        <img src={logoUrl} alt="mainstack-logo" height="52px" width="52px" />
+      <div className={`${isSidebarOpen ? "px-[4em] py-4" : "p-2"}`}>
+        <img src={logoUrl} alt="mainstack-logo" height="42px" width="42px" />
       </div>
       <div className="mt-3 pb-8 mb-8">
         <div className="">
