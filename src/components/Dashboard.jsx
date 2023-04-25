@@ -10,7 +10,7 @@ const Dashboard = () => {
         isSidebarOpen ? "mr-72" : "mr-20"
       }`}
     >
-      <h3 className="tracking-tight font-bold text-[#131316] text-[20px] leading-[24px] py-6 px-9">
+      <h3 className="tracking-tight font-bold text-[#131316] text-[20px] leading-[24px] py-6 px-4 md:px-9">
         Dashboard
       </h3>
 
