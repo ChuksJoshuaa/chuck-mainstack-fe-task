@@ -11,7 +11,7 @@ const Home = () => {
           <Sidebar />
         </div>
       ) : (
-        <div className="w-20 fixed dark:bg-secondary-dark-bg border-2 border-gray-100 h-screen">
+        <div className="w-20 overflow-y-auto fixed dark:bg-secondary-dark-bg border-2 border-gray-100 h-screen">
           <Sidebar />
         </div>
       )}
