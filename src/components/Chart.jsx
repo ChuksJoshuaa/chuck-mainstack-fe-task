@@ -103,7 +103,7 @@ const Chart = () => {
         {timeData.map((item, index) => (
           <button
             key={index}
-            className={`mr-2 text-[14px] leading-[16px] rounded-[100px] py-2 px-3 ${
+            className={`mr-2 text-[14px] leading-[16px] mb-2 rounded-[100px] py-2 px-3 ${
               selectedOption === item
                 ? "border-[1px] border-[#FFDDCD] text-[#FF5403] font-bold bg-[#FFDDCD]"
                 : "text-gray-500 border-[1px] border-[#EFF1F6]"
