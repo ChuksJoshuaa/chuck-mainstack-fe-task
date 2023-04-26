@@ -121,7 +121,7 @@ const Chart = () => {
             <h3 className="text-[18px] leading-[24px] text-[#131316] tracking-[-1.5%] font-bold pb-2">
               Page Views
             </h3>
-            <p className="text-[14px] leading-[20px]">All Time</p>
+            <p className="text-[14px] leading-[20px] font-medium">All Time</p>
           </div>
           <AiOutlineInfoCircle className="text-[#31373D] text-2xl font-bolder" />
         </div>

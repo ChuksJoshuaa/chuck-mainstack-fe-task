@@ -114,8 +114,10 @@ const Sidebar = () => {
         </div>
 
         <AiOutlineDash
-          className={`mt-3 text-gray-700 font-bold cursor-pointer  ${
-            isSidebarOpen ? "text-2xl font-bold" : "ml-4 text-3xl font-bolder"
+          className={`text-gray-900 font-bold cursor-pointer  ${
+            isSidebarOpen
+              ? "text-2xl font-bold mt-1"
+              : "mt-3 ml-4 text-3xl font-bold"
           }`}
         />
       </div>
