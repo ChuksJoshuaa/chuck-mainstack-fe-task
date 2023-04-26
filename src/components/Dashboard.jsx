@@ -19,7 +19,7 @@ const Dashboard = () => {
           <div className="flex pb-2 justify-start items-center flex-wrap text-[24px] text-[#131316] leading-[32px] text-nowrap">
             <h3 className="pr-1">Good morning,</h3>
             <span className="flex">
-              Blessing <BsCloudSunFill className="text-gray-600" />{" "}
+              Chuck <BsCloudSunFill className="text-gray-600" />{" "}
             </span>
           </div>
           <p className="text-[14px] text-[#31373D] leading-[22px]">

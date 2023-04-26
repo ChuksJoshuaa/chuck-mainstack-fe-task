@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { dashboardIcon, links } from "../utils/sidebarData";
-import { logoUrl, userUrl } from "../utils/url";
-import { useSelector } from "react-redux";
 import { AiOutlineDash } from "react-icons/ai";
+import { useSelector } from "react-redux";
+import { dashboardIcon, links } from "../utils/sidebarData";
+import { chuckUrl, logoUrl } from "../utils/url";
 
 const Sidebar = () => {
   const [selectedOption, setSelectedOption] = useState("Dashboard");
@@ -102,13 +102,13 @@ const Sidebar = () => {
       >
         <div className="flex items-center justify-start pl-4">
           <img
-            src={userUrl}
+            src={chuckUrl}
             alt="blessing-image"
             className="w-[32px] h-[32px] rounded-full"
           />
           {isSidebarOpen ? (
             <h3 className="text-gray-700 capitalize pl-2 text-gray-700 text-[15px] leading-[16px]">
-              Blessing Daniels
+              Chuck Joshua
             </h3>
           ) : null}
         </div>
