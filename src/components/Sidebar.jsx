@@ -25,7 +25,7 @@ const Sidebar = () => {
                   selectedOption === "Dashboard" &&
                   item.title === "Dashboard" &&
                   isSidebarOpen
-                    ? "border-l-[3px] border-[#FF5403]"
+                    ? "border-l-[3px] border-[#FF5403] bg-orange-100"
                     : "pr-3"
                 }`}
                 onClick={() => setSelectedOption("Dashboard")}
@@ -63,7 +63,7 @@ const Sidebar = () => {
                   key={link.name}
                   className={`mt-3 flex flex-row items-center justify-center py-2 ${
                     selectedOption === link.name && isSidebarOpen
-                      ? "border-l-[3px] border-[#FF5403]"
+                      ? "border-l-[3px] border-[#FF5403] bg-orange-100"
                       : "px-3"
                   } ${isSidebarOpen ? "pr-[3.8em]" : "pr-7"}`}
                   onClick={() => setSelectedOption(link.name)}
