@@ -1,6 +1,6 @@
-import axios from "axios";
-import { fetchUrl } from "./utils/url";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
+import { Home } from "./pages";
 import {
   openSidebar,
   setData,
@@ -9,8 +9,7 @@ import {
   setLocations,
   setSources,
 } from "./redux/features/main/mainSlick";
-import { useEffect, useState } from "react";
-import { Home } from "./pages";
+import data from "./utils/data";
 
 function App() {
   const dispatch = useDispatch();
@@ -19,12 +18,11 @@ function App() {
   const fetchData = async () => {
     try {
       dispatch(setLoader(true));
-      await axios.get(`${fetchUrl}`).then(function (response) {
-        let data = response.data;
+      setTimeout(() => {
         dispatch(setData(data));
         dispatch(setLocations(data.top_locations));
         dispatch(setSources(data.top_sources));
-      });
+      }, 100);
     } catch (error) {
       console.log(error);
       dispatch(setError(true));
